@@ -46,9 +46,9 @@ jobs:
       - name: 'Prepare build'
         run: npm run prepare
       - name: 'Commit Bump to ${{ steps.get_version.outputs.VERSION }}'
+      #          echo git config --local user.email "action@github.com"
+#          echo git config --local user.name "GitHub Action"
         run: |
-          echo git config --local user.email "action@github.com"
-          echo git config --local user.name "GitHub Action"
           git add package.json
           git add src/version.ts
           git status
