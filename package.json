@@ -1,7 +1,7 @@
 {
-  "name": "@piwikpro/react-native-piwik-pro-sdk",
+  "name": "rn-test-tworasky",
   "version": "0.2.1",
-  "description": "Piwik Pro SDK for React Native",
+  "description": "Workflow Test React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -37,13 +37,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/PiwikPRO/react-native-piwik-pro-sdk",
-  "author": "Piwik PRO <example@mail.com> (https://www.piwik.pro)",
+  "repository": "https://github.com/danieltwork/rn-test",
+  "author": "tworasky@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PiwikPRO/react-native-piwik-pro-sdk/issues"
+    "url": "https://github.com/danieltwork/rn-test/issues"
   },
-  "homepage": "https://github.com/PiwikPRO/react-native-piwik-pro-sdk#readme",
+  "homepage": "https://github.com/danieltwork/rn-test#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
