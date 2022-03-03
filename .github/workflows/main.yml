@@ -50,13 +50,11 @@ jobs:
 #          echo git config --local user.name "GitHub Action"
         run: |
           git config user.email "tworasky@gmail.com"
-          git config user.name "danieltwork"
+          git config user.name "GitHub Action"
           git add .
           git status
-          git commit -m "Bump to ${{ steps.get_version.outputs.VERSION }} [skip ci]"
+          git commit -m "Bump to ${{ steps.get_version.outputs.VERSION }}"
           git push origin HEAD:main
-#         env:
-#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Release'
         run: npm run release-ci
         env:
