@@ -54,7 +54,7 @@ jobs:
           git add .
           git status
           git commit -m "Bump to ${{ steps.get_version.outputs.VERSION }} [skip ci]"
-          git push
+          git push origin HEAD:main
 #         env:
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 'Release'
