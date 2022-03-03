@@ -51,10 +51,10 @@ jobs:
         run: |
           git config user.email "tworasky@gmail.com"
           git config user.name "danieltwork"
-          git add package.json
-          git add src/version.ts
+          echo git add package.json
+          echo git add src/version.ts
           git status
-          git commit -m "Bump to ${{ steps.get_version.outputs.VERSION }} [skip ci]"
+          echo git commit -m "Bump to ${{ steps.get_version.outputs.VERSION }} [skip ci]"
           echo git push
 #         env:
 #           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
