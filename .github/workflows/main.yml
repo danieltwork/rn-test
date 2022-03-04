@@ -49,7 +49,7 @@ jobs:
       #          echo git config --local user.email "action@github.com"
 #          echo git config --local user.name "GitHub Action"
         run: |
-          git config user.email "tworasky@gmail.com"
+          git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add .
           git status
