@@ -32,11 +32,7 @@
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
   },
-  "keywords": [
-    "react-native",
-    "ios",
-    "android"
-  ],
+  "keywords": [],
   "repository": "https://github.com/danieltwork/rn-test",
   "author": "tworasky@gmail.com",
   "license": "MIT",
