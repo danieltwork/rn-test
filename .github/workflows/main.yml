@@ -22,6 +22,8 @@ jobs:
 #       - run: npm test
   bump-and-build:
 #     needs: tests
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: Get the version
@@ -46,7 +48,7 @@ jobs:
       - name: 'Prepare build'
         run: npm run prepare
       - name: 'Commit Bump to ${{ steps.get_version.outputs.VERSION }}'
-      #          echo git config --local user.email "action@github.com"
+#          echo git config --local user.email "action@github.com"
 #          echo git config --local user.name "GitHub Action"
         run: |
           git config user.email "action@github.com"
